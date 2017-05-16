@@ -21,10 +21,15 @@ type Client interface {
 }
 
 func NewClient(env config.Env) (Client, error) {
+	SkipSslValidation, err := strconv.ParseBool(env.SkipSslValidation)
+	if err != nil {
+		SkipSslValidation = false
+	}
 	config := &cfclient.Config{
 		ClientID:     env.ClientID,
 		ClientSecret: env.ClientSecret,
 		ApiAddress:   env.CFURL,
+		SkipSslValidation: SkipSslValidation
 	}
 	client, err := cfclient.NewClient(config)
 	if err != nil {
