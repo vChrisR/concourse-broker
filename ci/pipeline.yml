@@ -77,3 +77,4 @@ resources:
     password: {{cf-deploy-password-staging}}
     organization: {{cf-organization-staging}}
     space: {{cf-space-staging}}
+    skip_cert_check: true
