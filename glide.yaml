@@ -1,4 +1,4 @@
-package: github.com/18F/concourse-broker
+package: github.com/vchrisr/concourse-broker
 import:
 - package: github.com/pivotal-cf/brokerapi
 - package: code.cloudfoundry.org/lager
