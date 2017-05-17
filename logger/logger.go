@@ -5,7 +5,7 @@ import (
 	"os"
 
 	"code.cloudfoundry.org/lager"
-	"github.com/18F/concourse-broker/config"
+	"github.com/vchrisr/concourse-broker/config"
 )
 
 // taken from https://github.com/alphagov/paas-rds-broker/blob/3c0f2e0e6f8b8f08d95446c81cf9a43150414185/main.go

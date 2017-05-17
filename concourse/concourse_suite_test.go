@@ -4,10 +4,11 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	"code.cloudfoundry.org/lager/lagertest"
-	"github.com/18F/concourse-broker/config"
-	"github.com/onsi/gomega/ghttp"
 	"testing"
+
+	"code.cloudfoundry.org/lager/lagertest"
+	"github.com/onsi/gomega/ghttp"
+	"github.com/vchrisr/concourse-broker/config"
 )
 
 func TestConcourse(t *testing.T) {

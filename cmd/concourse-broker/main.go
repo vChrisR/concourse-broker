@@ -3,13 +3,14 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/18F/concourse-broker/broker"
-	"github.com/18F/concourse-broker/config"
-	"github.com/18F/concourse-broker/logger"
-	"github.com/pivotal-cf/brokerapi"
 	"io/ioutil"
 	"log"
 	"net/http"
+
+	"github.com/pivotal-cf/brokerapi"
+	"github.com/vchrisr/concourse-broker/broker"
+	"github.com/vchrisr/concourse-broker/config"
+	"github.com/vchrisr/concourse-broker/logger"
 )
 
 func loadServices() ([]brokerapi.Service, error) {

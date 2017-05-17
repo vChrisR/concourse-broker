@@ -3,9 +3,11 @@ package cf
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/18F/concourse-broker/config"
-	"github.com/cloudfoundry-community/go-cfclient"
 	"io/ioutil"
+	"strconv"
+
+	"github.com/cloudfoundry-community/go-cfclient"
+	"github.com/vchrisr/concourse-broker/config"
 )
 
 type Details struct {
@@ -26,10 +28,10 @@ func NewClient(env config.Env) (Client, error) {
 		SkipSslValidation = false
 	}
 	config := &cfclient.Config{
-		ClientID:     env.ClientID,
-		ClientSecret: env.ClientSecret,
-		ApiAddress:   env.CFURL,
-		SkipSslValidation: SkipSslValidation
+		ClientID:          env.ClientID,
+		ClientSecret:      env.ClientSecret,
+		ApiAddress:        env.CFURL,
+		SkipSslValidation: SkipSslValidation,
 	}
 	client, err := cfclient.NewClient(config)
 	if err != nil {

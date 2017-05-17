@@ -1,13 +1,14 @@
 package concourse
 
 import (
-	"code.cloudfoundry.org/lager"
 	"errors"
 	"fmt"
-	"github.com/18F/concourse-broker/cf"
-	"github.com/18F/concourse-broker/config"
+
+	"code.cloudfoundry.org/lager"
 	"github.com/concourse/atc"
 	"github.com/concourse/go-concourse/concourse"
+	"github.com/vchrisr/concourse-broker/cf"
+	"github.com/vchrisr/concourse-broker/config"
 )
 
 const adminTeam = "main"

@@ -1,13 +1,14 @@
 package broker
 
 import (
-	"code.cloudfoundry.org/lager"
 	"context"
 	"errors"
-	"github.com/18F/concourse-broker/cf"
-	"github.com/18F/concourse-broker/concourse"
-	"github.com/18F/concourse-broker/config"
+
+	"code.cloudfoundry.org/lager"
 	"github.com/pivotal-cf/brokerapi"
+	"github.com/vchrisr/concourse-broker/cf"
+	"github.com/vchrisr/concourse-broker/concourse"
+	"github.com/vchrisr/concourse-broker/config"
 )
 
 // New returns a new concourse service broker instance.
