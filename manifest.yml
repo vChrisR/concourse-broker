@@ -4,7 +4,7 @@ applications:
 - name: "concourse-broker"
   command: concourse-broker
   env:
-    GO_INSTALL_PACKAGE_SPEC: "github.com/18F/concourse-broker/cmd/concourse-broker"
+    GO_INSTALL_PACKAGE_SPEC: "github.com/vchrisr/concourse-broker/cmd/concourse-broker"
   # BROKER_USERNAME:
   # BROKER_PASSWORD:
   # ADMIN_USERNAME:
