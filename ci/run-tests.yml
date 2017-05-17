@@ -9,7 +9,7 @@ image_resource:
 
 inputs:
 - name: broker-src
-  path: gopath/src/github.com/18F/concourse-broker
+  path: gopath/src/github.com/vchrisr/concourse-broker
 
 run:
-  path: gopath/src/github.com/18F/concourse-broker/ci/run-tests.sh
+  path: gopath/src/github.com/vchrisr/concourse-broker/ci/run-tests.sh

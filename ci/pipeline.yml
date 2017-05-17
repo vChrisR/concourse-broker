@@ -15,7 +15,6 @@ jobs:
     - get: broker-src
       passed: [test-concourse-broker]
       trigger: true
-    - get: pipeline-tasks
   - put: broker-deploy-staging
     params:
       path: broker-src
