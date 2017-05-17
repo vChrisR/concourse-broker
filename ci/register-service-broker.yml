@@ -11,7 +11,7 @@ params:
   CF_FLAGS:
 
 inputs:
-- name: pipeline-tasks
+- name: broker-src
 
 run:
   path: broker-src/ci/register-service-broker.sh

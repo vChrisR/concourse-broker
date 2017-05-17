@@ -1,8 +1,10 @@
-hash: c8b54252912431f5734ac06c8b055637fb0a86128b09da79ff51f16b364e0e1d
-updated: 2017-01-05T15:18:10.057303139-05:00
+hash: da89dc2ff33d256a45fe914ecf2334709c509d7fff01fa7b54d23b01e23035e1
+updated: 2017-05-17T10:42:03.147440016+02:00
 imports:
 - name: code.cloudfoundry.org/lager
   version: 62951a8009ab331bb21dc418074fa54e66eb9b6a
+  subpackages:
+  - lagertest
 - name: github.com/bmizerany/pat
   version: c068ca2f0aacee5ac3681d68e4d0a003b7d1fd2c
 - name: github.com/cloudfoundry-community/go-cfclient
@@ -34,9 +36,38 @@ imports:
 - name: github.com/mitchellh/mapstructure
   version: d2dd0262208475919e1a362f675cfc0e7c10e905
 - name: github.com/onsi/ginkgo
-  version: 5437a97bf824dec14e58d68c56ee36e772670c2e
+  version: 43e2af1f01ace55adbb6d7d0f30416476db1baae
+  subpackages:
+  - config
+  - internal/codelocation
+  - internal/containernode
+  - internal/failer
+  - internal/leafnodes
+  - internal/remote
+  - internal/spec
+  - internal/specrunner
+  - internal/suite
+  - internal/testingtproxy
+  - internal/writer
+  - reporters
+  - reporters/stenographer
+  - types
 - name: github.com/onsi/gomega
-  version: c73e51675ad2455a4515b6213eb7145eaade4824
+  version: c90bd38f8da6e92f8b114953db2f0ad7361fb4b4
+  subpackages:
+  - format
+  - gbytes
+  - ghttp
+  - internal/assertion
+  - internal/asyncassertion
+  - internal/oraclematcher
+  - internal/testingtsupport
+  - matchers
+  - matchers/support/goraph/bipartitegraph
+  - matchers/support/goraph/edge
+  - matchers/support/goraph/node
+  - matchers/support/goraph/util
+  - types
 - name: github.com/peterhellberg/link
   version: d1cebc7ea14a5fc0de7cb4a45acae773161642c6
 - name: github.com/pivotal-cf/brokerapi
@@ -58,6 +89,10 @@ imports:
   subpackages:
   - clientcredentials
   - internal
+- name: golang.org/x/sys
+  version: a408501be4d17ee978c04a618e7a1b22af058c0e
+  subpackages:
+  - unix
 - name: google.golang.org/appengine
   version: e234e71924d4aa52444bc76f2f831f13fa1eca60
   subpackages:
