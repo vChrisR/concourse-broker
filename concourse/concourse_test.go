@@ -1,14 +1,15 @@
 package concourse
 
 import (
+	"net/http"
+
 	"code.cloudfoundry.org/lager"
-	"github.com/18F/concourse-broker/cf"
-	"github.com/18F/concourse-broker/config"
 	"github.com/concourse/atc"
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 	"github.com/onsi/gomega/ghttp"
-	"net/http"
+	"github.com/vchrisr/concourse-broker/cf"
+	"github.com/vchrisr/concourse-broker/config"
 )
 
 var _ = Describe("Concourse", func() {
